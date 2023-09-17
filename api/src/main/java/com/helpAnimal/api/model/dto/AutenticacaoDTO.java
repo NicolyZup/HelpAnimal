@@ -5,21 +5,20 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
-
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor(force = true)
-public class AjudaDTO {
+public class AutenticacaoDTO {
+    @Column(nullable = false)
+    @NotNull
+    @NotEmpty
+    private String login;
 
     @Column(nullable = false)
-    private String animal;
-
-    @Column(nullable = false)
-    private String descricao;
-
-    @Column(nullable = false)
-    private String localidade;
-
-    private Boolean ajudaAtendida = false;
+    @NotNull
+    @NotEmpty
+    private String password;
 }

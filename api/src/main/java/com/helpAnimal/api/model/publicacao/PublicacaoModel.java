@@ -1,20 +1,17 @@
-package com.helpAnimal.api.model;
+package com.helpAnimal.api.model.publicacao;
 
 import lombok.*;
-import org.springframework.beans.factory.annotation.Value;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "TB_AJUDAS")
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
-public class AjudaModel {
+@NoArgsConstructor(force = true)
+public class PublicacaoModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
