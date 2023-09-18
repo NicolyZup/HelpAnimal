@@ -1,23 +1,15 @@
-package com.helpAnimal.api.model.publicacao;
+package com.helpAnimal.api.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
 import java.time.LocalDate;
 
-@Entity
-@Table(name = "TB_COMENTARIOS")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ComentarioModel {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
+public class ComentarioResponseDTO {
     private String usuario;
 
     private String texto;

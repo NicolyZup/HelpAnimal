@@ -1,5 +1,6 @@
 package com.helpAnimal.api.model.usuario;
 
+import com.helpAnimal.api.model.publicacao.PublicacaoModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -11,10 +12,11 @@ import org.springframework.security.core.userdetails.UserDetails;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-@Table(name = "tb_usuarios")
+@Table(name = "TB_USUARIOS")
 @Entity
 @Data
 @NoArgsConstructor

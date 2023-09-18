@@ -5,9 +5,11 @@ import lombok.*;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
-@Table(name = "TB_AJUDAS")
+@Table(name = "TB_PUBLICACOES")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor(force = true)
@@ -32,8 +34,14 @@ public class PublicacaoModel {
     @NotEmpty
     private String localidade;
 
-    //impplementar apos sistema de login
-    /*private List<ComentarioModel> comentarios = new ArrayList<>();*/
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "publicacao_id")
+    private List<ComentarioModel> comentarios = new ArrayList<>();
+
+    @Column(nullable = false)
+    @NotNull
+    @NotEmpty
+    private String usuario;
 
     private Boolean ajudaAtendida=false;
 }
