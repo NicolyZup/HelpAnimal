@@ -10,7 +10,7 @@ A API deverá resolver um problema da sociedade ou ser uma ideia inovadora para
 auxiliar algo dentro da sociedade.
 
 ## :pushpin: Sobre a HelpAnimal
-O intuito desta API é a construção de um app/sistema que funcione como uma "rede social" de pedidos de ajuda/resgate para animais(principalmente os animais de rua). Sendo assim, os usuários podem solicitar ajuda através de publicações bem como também ajudar outros casos.
+O intuito desta API é a construção de um app/sistema que funcione como uma "rede social" de pedidos de ajuda/resgate para animais(principalmente os animais de rua). Sendo assim, os usuários podem solicitar ajuda através de publicações, bem como também ajudar outros casos.
 
 De acordo com a Organização Mundial de Saúde (OMS), somente no Brasil, cerca de 30 milhões de animais estão abandonados, sendo aproximadamente 20 milhões de cães e 10 milhões de gatos. Em grandes metrópoles, para cada cinco habitantes há um cachorro. Desses, 10% estão abandonados e enfrentam as adversidades das ruas.
 
