@@ -1,8 +1,8 @@
-# :feet: HelpAnimal
+# <img src="./api/src/main/img/logo.png" width="3%"> HelpAnimal
 Repositório criado para desenvolvimento de API de voluntariado para ajuda/resgate de animais.
 
 ## Logo:
-
+<img src="./api/src/main/img/logo.png" width="20%">
 
 ## :pushpin: Desafio proposto
 Você deverá criar uma API REST.
