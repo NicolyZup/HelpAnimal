@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
 @Entity
@@ -18,9 +20,18 @@ public class ComentarioModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false)
+    @NotNull
+    @NotEmpty
     private String usuario;
 
+    @Column(nullable = false)
+    @NotNull
+    @NotEmpty
     private String texto;
 
+    @Column(nullable = false)
+    @NotNull
+    @NotEmpty
     private LocalDate data;
 }
